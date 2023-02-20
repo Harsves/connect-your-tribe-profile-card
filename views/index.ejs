@@ -1,67 +1,69 @@
 <%- include('./partials/head') %>
 
-<article>
+  <article>
 
-  <div class="name">
-      
-<h1>Suus</h1>
+    <div class="name">
 
-<h3>Harsveld</h3>
+      <h1>
+        <%= member.name %>
+      </h1>
 
-<button id="namebutton">Knop</button>
-</div>
+      <h2><%= member.surname %></h2>
 
-<div class="degree" style="display: none;">
+      <button id="namebutton">Knop</button>
+    </div>
 
-  <h1>Grafisch vormgever</h1>
-  <button id="degreebutton">Knop</button>
+    <div class="degree" style="display: none;">
 
-</div>
+      <h1><%= member.nickname %></h1>
+      <button id="degreebutton">Knop</button>
 
-<div class="photo" style="display: none;">
+    </div>
 
-  <button id="photobutton">Knop</button>
+    <div class="photo" style="display: none;">
+      <img src="<%= member.avatar %>">
+      <button id="photobutton">Knop</button>
 
-</div>
+    </div>
 
-<div class="about" style="display: none;">
+    <div class="about" style="display: none;">
 
-  <p>Ik ben 20 jaar een woon in Uitgeest. Ik doe aan boogschieten en in mijn vrije tijd ben ik freelancer en maak ik websites in WordPress.</p>
-  <button id="aboutbutton">Knop</button>
+      <p><%= member.bio %></p>
+      <button id="aboutbutton">Knop</button>
 
-</div>
+    </div>
 
-<div class="socials" style="display: none;">
+    <div class="socials" style="display: none;">
 
-  <span class="instagram">
-    <a href="https://www.instagram.com/suusharsveld/" target="_blank">
-<img src="styles/image/instagram.png" alt="instagram">
-    </a>
-  </span>
+      <span class="instagram">
+        <a href="https://www.instagram.com/suusharsveld/" target="_blank">
+          <img src="styles/image/instagram.png" alt="instagram">
+        </a>
+      </span>
 
-<span class="linkedin">
-    <a href="https://www.linkedin.com/in/suusharsveld/" target="_blank">
-<img src="styles/image/linkedin.png" alt="linkedin">
-    </a>
-  </span>
+      <span class="linkedin">
+        <a href="https://www.linkedin.com/in/suusharsveld/" target="_blank">
+          <img src="styles/image/linkedin.png" alt="linkedin">
+        </a>
+      </span>
 
-<span class="portfolio">
-    <a href="https://www.suusharsveld.nl/" target="_blank">
-<img src="styles/image/Trashcan.png" alt="portfolio">
-    </a>
-  </span>
+      <span class="portfolio">
+        <a href="https://www.suusharsveld.nl/" target="_blank">
+          <img src="styles/image/Trashcan.png" alt="portfolio">
+        </a>
+      </span>
 
-<span class="email">
-    <a href="mailto:info@suusharsveld.nl" target="_blank">
-<img src="styles/image/envelope.png" alt="portfolio">
-    </a>
-</span>
-<br>
-  <button id="socialsbutton">Knop</button>
+      <span class="email">
+        <a href="mailto:info@suusharsveld.nl" target="_blank">
+          <img src="styles/image/envelope.png" alt="portfolio">
+        </a>
+      </span>
+      <br>
+      <button id="socialsbutton">Knop</button>
 
-</div>
+    </div>
 
-</article>
+  </article>
 
 
-<%- include('./partials/foot') %>
+  <%- include('./partials/foot') %>

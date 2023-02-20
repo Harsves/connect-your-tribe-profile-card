@@ -40,7 +40,7 @@ body {
   border-radius: 20px;
 }
 
-.name h3 {
+.name h2 {
   font-weight: 300;
   margin: 1rem 0 3rem;
   font-size: 4em;
@@ -68,7 +68,7 @@ body {
 
 .degree h1{
   margin: 7rem 0 5rem;
-  color: white;
+  color: black;
   font-weight: 400;
   font-size: 4em;
 }
@@ -83,7 +83,6 @@ header {
 }
 
 .photo {
-  background-image: url(image/Portret.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width:50vw;
@@ -101,9 +100,13 @@ header {
   padding-top: 40px; 
 }
 
-#photobutton {
+/* #photobutton {
   margin-top: 22rem;
+} */
 
+.photo > img {
+  width: 70%;
+  height: 70;
 }
 
 .about {
