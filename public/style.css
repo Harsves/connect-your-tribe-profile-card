@@ -1,56 +1,275 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-sizing:border-box;
+  font-family: 'Quicksand', sans-serif;
 }
+
+html {
+  height:100vh;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background: rgba(188, 105, 138, 0.5);
-  background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
-    radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+  height:100vh;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+.name {
+  width:50vw;
+  height: 50vh;
+  max-width: 25em;
+  min-width:20em;
+  display:block;
+  flex-direction:column;
+  text-align:center;
+  margin: auto;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: relative;
+  transition:.25s;
+  padding-top: 40px; 
 }
 
-article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
+.name h1{
+  margin: 4rem 0 0rem;
   color: white;
-
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
+  font-weight: 400;
+  font-size: 7em;
+  background-color: black;
+  border-radius: 20px;
 }
 
-h1 {
+.name h3 {
+  font-weight: 300;
+  margin: 1rem 0 3rem;
+  font-size: 4em;
+}
+
+.degree {
+  background-image: url(image/Mouth.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width:50vw;
+  height: 50vh;
+  max-width: 25em;
+  min-width:20em;
+  display:block;
+  flex-direction:column;
+  text-align:center;
+  margin: auto;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: relative;
+  transition:.25s;
+  padding-top: 40px; 
+}
+
+.degree h1{
+  margin: 7rem 0 5rem;
+  color: white;
+  font-weight: 400;
+  font-size: 4em;
+}
+
+header {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+  
+}
+
+.photo {
+  background-image: url(image/Portret.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:50vw;
+  height: 50vh;
+  max-width: 25em;
+  min-width:20em;
+  display:block;
+  flex-direction:column;
+  text-align:center;
+  margin: auto;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: relative;
+  transition:.25s;
+  padding-top: 40px; 
+}
+
+#photobutton {
+  margin-top: 22rem;
+
+}
+
+.about {
+  width:50vw;
+  height: 50vh;
+  max-width: 25em;
+  min-width:20em;
+  display:block;
+  flex-direction:column;
+  text-align:center;
+  margin: auto;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: relative;
+  transition:.25s;
+  padding-top: 40px; 
+}
+
+.about p {
+  font-size: 1.3em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+.socials {
+  width:50vw;
+  height: 50vh;
+  max-width: 25em;
+  min-width:20em;
+  display:block;
+  flex-direction:column;
+  text-align:center;
+  margin: auto;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: relative;
+  transition:.25s;
+  padding-top: 40px; 
+}
+
+span.instagram img {
+  width: auto;
+  height: 50px;
+  margin-top: 10rem;
+}
+
+span.linkedin img {
+  width: auto;
+  height: 50px;
+  margin-top: 10rem;
+}
+
+
+span.portfolio img {
+    width: auto;
+    height: 50px;
+    margin-top: 10rem;
+}
+
+
+span.email img {
+    width: auto;
+    height: 50px;
+    margin-top: 10rem;
+
+}
+
+.socials button {
+  margin-top: 8.5rem;
+}
+
+button {
+  background-color: #bad079;
+  border: 2px solid #2c351a;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+img {
+  width:100%;
+  position:relative;
+  height: 50%;
+  border-radius: 1rem 1rem 0rem 0rem;
+
+}
+
+dl {
+  width:100%;
+  background: rgb(255,255,255);
+  
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "html-dd css-dd js-dd"
+    "html-dt css-dt js-dt"
+    ;
+  justify-items:center;
+  align-items:start;
+  padding:5rem 0 3rem;
+  margin-top: -3rem;
+  margin-bottom: 0;
   text-align: center;
 }
+
+dt{
+  font-weight: bold;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  padding-top: .25rem;
+  margin-top: .25rem;
+}
+dt:nth-of-type(1){ grid-area: html-dt; }
+dt:nth-of-type(2){ grid-area: css-dt; transform: translateY(1rem);}
+dt:nth-of-type(3){ grid-area: js-dt; }
+
+dd {
+  margin:0;
+  padding-left:.3rem;
+  transition:.25s .3s;
+}
+dd:nth-of-type(2){  
+  transform: translateY(1rem);
+}
+
+p { 
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+article > p {
+  padding:2rem 2rem;
+  margin-top: 0;
+  background:rgba(255,255,255, 0.5);
+  text-align:center;
+  border-radius: 0 0 1rem 1rem;
+  width:100%;
+}
+
+/* expand content */
+body.expand {
+  font-size:1.15em;
+}
+
+body.expand article {
+  width:60vw;
+  max-width: 60vw;
+}
+
+body.expand button svg:first-of-type {
+  opacity:0;
+  transition-delay: 0ms;
+}
+
+body.expand button svg:nth-of-type(2) {
+  opacity:1;
+  transition-delay:.25s;
+}
+
+body.expand dd {
+  font-size: 1.75em;
+}
+
+body.expand img {
+  width:15em;
+}
+
